@@ -18,9 +18,6 @@
             <a href="#education" class="nav-link" data-section="education">Education</a>
             <a href="#contact" class="nav-link" data-section="contact">Contact</a>
         </nav>
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </div>
     </header>
 
     <main>
@@ -117,7 +114,7 @@
             <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
             <div class="contact-container">
                 <div class="contact-info">
-                    <h3>Get In Touch</h3>
+                    <h3>Contribute</h3>
                     <p>Feel free to reach out for collaboration opportunities or just to say hello!</p>
                     
                     <div class="contact-item">
@@ -186,13 +183,8 @@
                         <input type="text" id="subject" placeholder="Subject" required>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    
                     <button type="submit" class="btn primary-btn">
-                        <i class="fa-solid fa-paper-plane"></i> Send Message
+                        <i class="fa-solid fa-paper-plane"></i> Send Request
                     </button>
                     
                     <div id="form-status" class="form-status"></div>
@@ -246,9 +238,6 @@
                     setTimeout(type, isDeleting ? 50 : 100);
                 }
             }
-
-            // Start typing effect
-            setTimeout(type, 1000);
 
             // Smooth scrolling for navigation
             const navLinks = document.querySelectorAll('.nav-link');
