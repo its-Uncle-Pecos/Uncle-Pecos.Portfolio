@@ -120,8 +120,8 @@ nav a.active {
 section {
     min-height: 100vh;
     padding: 10rem 9% 5rem;
-    opacity: 0;
-    transform: translateY(20px);
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
@@ -221,6 +221,8 @@ section.active {
     display: flex;
     align-items: center;
     gap: 10px;
+    height: 4rem; 
+    margin-bottom: 2rem;
 }
 
 .typing-text {
@@ -229,6 +231,7 @@ section.active {
     position: relative;
     display: inline-block;
     min-width: 280px;
+    min-height: 4rem;
 }
 
 .typing-text::after {
