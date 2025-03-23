@@ -228,11 +228,14 @@
             let wordIndex = 0;
             let charIndex = 0;
             let isDeleting = false;
-            let isEnd = false;
 
             function type() {
                 const currentWord = words[wordIndex];
                 
+                if (!typingText) {
+                    console.error('Typing text element not found');
+                    return;
+                }                
                 if (isDeleting) {
                     typingText.textContent = currentWord.substring(0, charIndex - 1);
                     charIndex--;
@@ -242,7 +245,6 @@
                 }
 
                 if (!isDeleting && charIndex === currentWord.length) {
-                    isEnd = true;
                     isDeleting = true;
                     setTimeout(type, 1500);
                 } else if (isDeleting && charIndex === 0) {
