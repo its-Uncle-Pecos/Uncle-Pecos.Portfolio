@@ -378,6 +378,58 @@ section.active {
 }
 
 /* Education Section */
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 5rem;
+    color: var(--text-color);
+}
+
+.education-card {
+    background-color: var(--secondary-bg);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: 0.5s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(183, 75, 75, 0.1);
+    transform: translateY(0);
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+.education-card i {
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.education-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.education-level {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.education-progress {
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 10px;
+    transition: width 1.5s ease;
+    width: 0;
+}
+
 .timeline {
     position: relative;
     max-width: 800px;
