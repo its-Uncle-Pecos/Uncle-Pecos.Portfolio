@@ -419,6 +419,10 @@ section.active {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
+.education-card p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
 
 .education-level {
     height: 10px;
