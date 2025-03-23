@@ -230,7 +230,7 @@ section.active {
     font-weight: 600;
     position: relative;
     display: inline-block;
-    min-width: 220px;
+    min-width: 240px;
     min-height: 4rem;
 }
 
